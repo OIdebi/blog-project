@@ -38,3 +38,26 @@ and admin-only access for post management.
 ```bash
 git clone https://github.com/OIdebi/blog-project.git
 cd blog-project
+```
+
+Install dependencies
+It's recommended to use a virtual environment.
+
+```bash
+pip install -r requirements.txt
+```
+
+If you don’t have a requirements.txt, create one by running:
+```bash
+pip freeze > requirements.txt
+```
+
+3. Run the app
+```bash
+python main.py
+```
+Go to http://127.0.0.1:5000/ in your browser.
+
+🔐 Admin Access
+To access post management (create/edit/delete), login as the admin user.
+By default, the first registered user becomes the admin.
